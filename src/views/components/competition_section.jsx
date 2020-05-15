@@ -28,6 +28,7 @@ class Sponsors extends React.Component {
         return (
             <div className="sponsors">
                 <Container>
+                    <h1>SPONSORS</h1>
                     <Row>
                         <Col xs="6" sm="4">
                             <Card>

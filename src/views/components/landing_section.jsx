@@ -23,10 +23,11 @@ class LANDING_SECTION extends React.Component {
 
     render() {
         return (
-            <div className="contact">
+            <div className="landing">
                 <Row>
-                    <Col xs="6">
-                        <h1>TEAM ANTARIKSH</h1>
+                    <Col xs="6" className="text_section">
+                        <h1 className='title'>TEAM ANTARIKSH</h1>
+                        <span className='subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
                     </Col>
                     <Col xs="6"><img src={require("./../../assets/img/logo.svg")} /></Col>
                 </Row>

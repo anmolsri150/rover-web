@@ -2,7 +2,6 @@ import Landing from "./views/pages/landing.jsx";
 import Presentation from "./views/pages/presentation.jsx";
 import Team from "./views/pages/team.jsx";
 import Contact from "./views/pages/contact.jsx";
-import App from "./App";
 
 const routes = [
   {
@@ -27,12 +26,6 @@ const routes = [
     path: "/contact",
     name: "Contact",
     component: Contact,
-    layout: "/layout"
-  },
-  {
-    path: "/app",
-    name: "App",
-    component: App,
     layout: "/layout"
   },
 ];

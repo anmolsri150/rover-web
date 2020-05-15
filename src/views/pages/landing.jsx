@@ -2,6 +2,7 @@ import React from "react";
 import Contact from './../components/contact_section';
 import Sponsors from './../components/sponsors_section';
 import LANDING_SECTION from "../components/landing_section";
+import './landing.css'
 // reactstrap components
 import {
   Button,
