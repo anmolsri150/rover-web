@@ -24,7 +24,6 @@ class NavbarLanding extends React.Component {
     this.state = {
       collapseOpen: false,
       color: "navbar-transparent",
-      toggle: false,
       isOpen: false
     };
   }
@@ -34,7 +33,7 @@ class NavbarLanding extends React.Component {
   // this function opens and closes the collapse on small devices
   // it also adds navbar-transparent class to the navbar when closed
   // ad bg-white when opened
-  toggleCollapse = () => {
+  toggle = () => {
     let newState = {
       collapseOpen: !this.state.collapseOpen
     };
@@ -49,40 +48,40 @@ class NavbarLanding extends React.Component {
     return (
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/">reactstrap</NavbarBrand>
-        <NavbarToggler onClick={this.state.toggle} />
+        <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-          <NavItem>
-                <NavLink to="/" className="nav-link">
-                  <i className="nc-icon nc-layout-11" />
-                  Dashboard
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/app" className="nav-link">
-                  <i className="nc-icon nc-book-bookmark" />
-                  App
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/presentation" className="nav-link">
-                  <i className="nc-icon nc-tap-01" />
-                  Presentation
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/contact" className="nav-link">
-                  <i className="nc-icon nc-satisfied" />
-                  Contact
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/team" className="nav-link">
-                  <i className="nc-icon nc-key-25" />
-                  Team
-                </NavLink>
-              </NavItem>
-          </Nav>
+          <Nav className="mr-auto navbar-right" navbar>
+            <NavItem>
+                  <NavLink to="/" className="nav-link">
+                    <i className="nc-icon nc-layout-11" />
+                    Dashboard
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to="/app" className="nav-link">
+                    <i className="nc-icon nc-book-bookmark" />
+                    App
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to="/presentation" className="nav-link">
+                    <i className="nc-icon nc-tap-01" />
+                    Presentation
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to="/contact" className="nav-link">
+                    <i className="nc-icon nc-satisfied" />
+                    Contact
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to="/team" className="nav-link">
+                    <i className="nc-icon nc-key-25" />
+                    Team
+                  </NavLink>
+                </NavItem>
+            </Nav>
           <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>

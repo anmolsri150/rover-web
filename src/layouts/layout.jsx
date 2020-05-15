@@ -1,7 +1,6 @@
 
 import React from "react";
 // javascript plugin used to create scrollbars on windows
-import PerfectScrollbar from "perfect-scrollbar";
 import { Route, Switch } from "react-router-dom";
 
 import NavbarLanding from "../components/Navbar/Navbar";
@@ -18,27 +17,6 @@ class Layout extends React.Component {
       activeColor: "info",
       sidebarMini: false
     };
-  }
-  componentDidMount() {
-    if (navigator.platform.indexOf("Win") > -1) {
-      document.documentElement.className += " perfect-scrollbar-on";
-      document.documentElement.classList.remove("perfect-scrollbar-off");
-      ps = new PerfectScrollbar(this.refs.mainPanel);
-    }
-  }
-  componentWillUnmount() {
-    if (navigator.platform.indexOf("Win") > -1) {
-      ps.destroy();
-      document.documentElement.className += " perfect-scrollbar-off";
-      document.documentElement.classList.remove("perfect-scrollbar-on");
-    }
-  }
-  componentDidUpdate(e) {
-    if (e.history.action === "PUSH") {
-      document.documentElement.scrollTop = 0;
-      document.scrollingElement.scrollTop = 0;
-      this.refs.mainPanel.scrollTop = 0;
-    }
   }
   getRoutes = routes => {
     return routes.map((prop, key) => {
