@@ -47,7 +47,7 @@ class Contact extends React.Component {
                   onClick={e => e.preventDefault()}
                   outline
                 >
-                  Unlock
+                  Unlock Contact
                 </Button>
               </CardFooter>
             </Card>

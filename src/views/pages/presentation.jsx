@@ -47,7 +47,7 @@ class Presentation extends React.Component {
                   onClick={e => e.preventDefault()}
                   outline
                 >
-                  Unlock
+                  Unlock Present
                 </Button>
               </CardFooter>
             </Card>

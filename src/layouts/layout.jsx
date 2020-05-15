@@ -4,9 +4,9 @@ import React from "react";
 import PerfectScrollbar from "perfect-scrollbar";
 import { Route, Switch } from "react-router-dom";
 
-import Navbar from "components/Navbars/Navbar.jsx";
+import NavbarLanding from "../components/Navbar/Navbar";
 
-import routes from "routes.js";
+import routes from "../routes.js";
 
 var ps;
 
@@ -45,14 +45,15 @@ class Layout extends React.Component {
       if (prop.collapse) {
         return this.getRoutes(prop.views);
       }
-      if (prop.layout === "/admin") {
+      if (prop.layout === "/layout") {
         return (
           <Route
-            path={prop.layout + prop.path}
+            exact path={prop.path}
             component={prop.component}
             key={key}
           />
         );
+        console.log(prop.path)
       } else {
         return null;
       }
@@ -75,29 +76,10 @@ class Layout extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <Sidebar
-          {...this.props}
-          routes={routes}
-          bgColor={this.state.backgroundColor}
-          activeColor={this.state.activeColor}
-        />
         <div className="main-panel" ref="mainPanel">
-          <AdminNavbar {...this.props} handleMiniClick={this.handleMiniClick} />
+          <NavbarLanding {...this.props} handleMiniClick={this.handleMiniClick} />
           <Switch>{this.getRoutes(routes)}</Switch>
-          {// we don't want the Footer to be rendered on full screen maps page
-          this.props.location.pathname.indexOf("full-screen-map") !==
-          -1 ? null : (
-            <Footer fluid />
-          )}
         </div>
-        <FixedPlugin
-          bgColor={this.state.backgroundColor}
-          activeColor={this.state.activeColor}
-          sidebarMini={this.state.sidebarMini}
-          handleActiveClick={this.handleActiveClick}
-          handleBgClick={this.handleBgClick}
-          handleMiniClick={this.handleMiniClick}
-        />
       </div>
     );
   }

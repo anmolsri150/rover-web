@@ -47,7 +47,7 @@ class Team extends React.Component {
                   onClick={e => e.preventDefault()}
                   outline
                 >
-                  Unlock
+                  Unlock Team
                 </Button>
               </CardFooter>
             </Card>
