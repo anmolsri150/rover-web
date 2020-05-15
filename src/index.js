@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.css";
 
 import './assets/css/style.css'; //Global Stylesheet
-import "bootstrap/dist/css/bootstrap.css";
+
 import App from './App';//remove after setup
 
 import Presentation from './views/pages/presentation'
@@ -27,7 +28,7 @@ ReactDOM.render(
       <Route path="/app" render={props => <App {...props}/>} />
       <Route path="/presentation" render={props => <Presentation {...props}/>} />
       <Route path="/contact" render={props => <Contact {...props}/>} /> */}
-      <Redirect to="/" />
+      <Redirect to="/app" />
     </Switch>
   </Router>,
   document.getElementById('root')
