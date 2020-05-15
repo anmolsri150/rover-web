@@ -4,10 +4,7 @@ import React from "react";
 import PerfectScrollbar from "perfect-scrollbar";
 import { Route, Switch } from "react-router-dom";
 
-import AdminNavbar from "components/Navbars/AdminNavbar.jsx";
-import Footer from "components/Footer/Footer.jsx";
-import Sidebar from "components/Sidebar/Sidebar.jsx";
-import FixedPlugin from "components/FixedPlugin/FixedPlugin.jsx";
+import Navbar from "components/Navbars/Navbar.jsx";
 
 import routes from "routes.js";
 

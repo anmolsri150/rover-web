@@ -8,6 +8,8 @@ import './assets/css/style.css'; //Global Stylesheet
 import App from './App';//remove after setup
 
 import Presentation from './views/pages/presentation'
+import Landing from './views/pages/landing'
+import Team from './views/pages/team'
 import Contact from './views/pages/contact'
 
 import * as serviceWorker from './serviceWorker';
@@ -20,6 +22,8 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       {/* <Route path="/" render={props => <Layout {...props} />} /> */}
+      <Route path="/" render={props => <Landing {...props}/>} />
+      <Route path="/team" render={props => <Team {...props}/>} />
       <Route path="/app" render={props => <App {...props}/>} />
       <Route path="/presentation" render={props => <Presentation {...props}/>} />
       <Route path="/contact" render={props => <Contact {...props}/>} />
