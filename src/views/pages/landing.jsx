@@ -35,6 +35,7 @@ class Landing extends React.Component {
         <ReactPageScroller
           pageOnChange={this.handlePageChange}
           customPageNumber={this.state.currentPage}
+          animationTimer={600}
         >
           <LANDING_SECTION/>
           <Competition/>
