@@ -25,7 +25,7 @@ class Contact extends React.Component {
         return (
             <section className="contact fullpage-section">
                 <Row>
-                    <Col xs="5">
+                    <Col xs="5" style={{'padding-top': '15vh'}}>
                         <h1>CONTACT US</h1>
                         <span>Get in Touch</span>
                     </Col>

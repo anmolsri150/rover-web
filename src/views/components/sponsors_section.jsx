@@ -26,7 +26,7 @@ class Sponsors extends React.Component {
 
     render() {
         return (
-            <section className="sponsors fullpage-section">
+            <section className="sponsors fullpage-section" style={{'padding-top': '15vh'}}>
                 <Container>
                     <h1>SPONSORS</h1>
                     <Row>

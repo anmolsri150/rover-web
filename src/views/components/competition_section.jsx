@@ -26,7 +26,7 @@ class Competition extends React.Component {
 
     render() {
         return (
-            <section className="competition fullpage-section">
+            <section className="competition fullpage-section" style={{'padding-top': '15vh'}}>
                 <Container>
                     <h1>COMPETITION PARTICIPATION</h1>
                     <div style={{display: 'inline'}}>
