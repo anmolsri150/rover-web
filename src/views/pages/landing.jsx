@@ -1,7 +1,9 @@
 import React from "react";
-import Contact from './../components/contact_section';
-import Sponsors from './../components/sponsors_section';
-import LANDING_SECTION from "../components/landing_section";
+import Contact from './../components/contact_section.jsx';
+import Sponsors from './../components/sponsors_section.jsx';
+import LANDING_SECTION from "../components/landing_section.jsx";
+import Competition from "../components/competition_section.jsx";
+
 import './landing.css'
 // reactstrap components
 import {
@@ -27,15 +29,10 @@ class Landing extends React.Component {
   render() {
     return (
       <div className="lock-page">
-        <LANDING_SECTION>
-
-        </LANDING_SECTION>
-        <Sponsors>
-
-        </Sponsors>
-        <Contact>
-
-        </Contact>
+        <LANDING_SECTION/>
+        <Competition/>
+        <Sponsors/>
+        <Contact/>
 
         {/*<Container>*/}
         {/*  <Col className="ml-auto mr-auto" lg="4" md="6">*/}

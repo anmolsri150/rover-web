@@ -19,7 +19,7 @@ import {
     Row
 } from "reactstrap";
 
-class Sponsors extends React.Component {
+class Competition extends React.Component {
     constructor(props) {
         super(props);
         }
@@ -28,7 +28,10 @@ class Sponsors extends React.Component {
         return (
             <div className="sponsors">
                 <Container>
-                    <h1>SPONSORS</h1>
+                    <h1>COMPETITION PARTICIPATION</h1>
+                    <div style={{display: 'inline'}}>
+                        <span>Lorem Ipsum</span>
+                    </div>
                     <Row>
                         <Col xs="6" sm="4">
                             <Card>
@@ -77,4 +80,4 @@ class Sponsors extends React.Component {
     }
 }
 
-export default Sponsors;
+export default Competition;
