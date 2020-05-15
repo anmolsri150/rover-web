@@ -1,9 +1,12 @@
 import React from "react";
-import './contact.css'
+import './contact_section.css'
 
 // reactstrap components
 import {
     Button,
+    CardImg,
+    CardText,
+    CardSubtitle,
     Card,
     CardHeader,
     CardBody,
@@ -12,7 +15,8 @@ import {
     FormGroup,
     Input,
     Container,
-    Col
+    Col,
+    Row
 } from "reactstrap";
 
 class Contact extends React.Component {
@@ -20,7 +24,12 @@ class Contact extends React.Component {
     render() {
         return (
             <div className="contact">
-                <h1>Hello Bois</h1>
+                <Row>
+                    <Col xs="6">
+                        <h1>CONTACT US</h1>
+                    </Col>
+                    <Col xs="6"><img src={require("./../../assets/img/logo.svg")} /></Col>
+                </Row>
             </div>
         );
     }
