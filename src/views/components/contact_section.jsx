@@ -23,14 +23,16 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <div className="contact">
+            <section className="contact fullpage-section">
                 <Row>
-                    <Col xs="6">
+                    <Col xs="5">
                         <h1>CONTACT US</h1>
+                        <span>Get in Touch</span>
                     </Col>
-                    <Col xs="6"><img src={require("./../../assets/img/logo.svg")} /></Col>
+                    <Col xs="7"><img src="https://source.unsplash.com/random/1920x1080" /></Col>
+                    {/* <Col xs="7"><img src={require("./../../assets/img/logo.svg")} /></Col> */}
                 </Row>
-            </div>
+            </section>
         );
     }
 }

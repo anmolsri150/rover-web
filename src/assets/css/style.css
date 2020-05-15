@@ -12,3 +12,8 @@ code {
     monospace;
 }
 
+.fullpage-section {
+  height: 100vh!important;
+  width: 100%;
+  overflow: hidden;
+}

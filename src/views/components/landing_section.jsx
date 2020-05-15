@@ -23,7 +23,7 @@ class LANDING_SECTION extends React.Component {
 
     render() {
         return (
-            <div className="landing">
+            <section className="landing fullpage-section">
                 <Row>
                     <Col xs="6" className="text_section">
                         <h1 className='title'>TEAM ANTARIKSH</h1>
@@ -31,7 +31,7 @@ class LANDING_SECTION extends React.Component {
                     </Col>
                     <Col xs="6"><img src={require("./../../assets/img/logo.svg")} /></Col>
                 </Row>
-            </div>
+            </section>
         );
     }
 }

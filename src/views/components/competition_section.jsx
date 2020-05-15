@@ -26,7 +26,7 @@ class Competition extends React.Component {
 
     render() {
         return (
-            <div className="competition">
+            <section className="competition fullpage-section">
                 <Container>
                     <h1>COMPETITION PARTICIPATION</h1>
                     <div style={{display: 'inline'}}>
@@ -44,9 +44,7 @@ class Competition extends React.Component {
                         </Col>
                     </Row>
                 </Container>
-
-
-            </div>
+            </section>
         );
     }
 }

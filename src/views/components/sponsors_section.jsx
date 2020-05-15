@@ -26,7 +26,7 @@ class Sponsors extends React.Component {
 
     render() {
         return (
-            <div className="sponsors">
+            <section className="sponsors fullpage-section">
                 <Container>
                     <h1>SPONSORS</h1>
                     <Row>
@@ -72,7 +72,7 @@ class Sponsors extends React.Component {
                 </Container>
 
 
-            </div>
+            </section>
         );
     }
 }
