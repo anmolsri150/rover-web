@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Paper Dashboard PRO React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-dashboard-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -30,7 +14,7 @@ import {
   Col
 } from "reactstrap";
 
-class LockScreen extends React.Component {
+class Presentation extends React.Component {
   componentDidMount() {
     document.body.classList.toggle("lock-page");
   }
@@ -44,10 +28,6 @@ class LockScreen extends React.Component {
           <Col className="ml-auto mr-auto" lg="4" md="6">
             <Card className="card-lock text-center">
               <CardHeader>
-                <img
-                  alt="..."
-                  src={require("assets/img/faces/joe-gardner-2.jpg")}
-                />
               </CardHeader>
               <CardBody>
                 <CardTitle tag="h4">Joe Gardner</CardTitle>
@@ -75,13 +55,10 @@ class LockScreen extends React.Component {
         </Container>
         <div
           className="full-page-background"
-          style={{
-            backgroundImage: `url(${require("assets/img/bg/bruno-abatti.jpg")})`
-          }}
         />
       </div>
     );
   }
 }
 
-export default LockScreen;
+export default Presentation;

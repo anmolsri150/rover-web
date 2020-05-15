@@ -18,7 +18,7 @@ ReactDOM.render(
     <Switch>
       {/* <Route path="/" render={props => <Layout {...props} />} /> */}
       <Route path="/app" render={props => <App {...props}/>} />
-      <Redirect to="/app" />
+      {/* <Redirect to="/app" /> */}
     </Switch>
   </Router>,
   document.getElementById('root')
