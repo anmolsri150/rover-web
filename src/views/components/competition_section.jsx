@@ -1,6 +1,6 @@
 import React from "react";
-import './sponsors_section.css';
-
+import './competition_section.css';
+import CompetitionCard from './Cards/competition_section_card'
 // reactstrap components
 import {
     Button,
@@ -26,7 +26,7 @@ class Competition extends React.Component {
 
     render() {
         return (
-            <div className="sponsors">
+            <div className="competition">
                 <Container>
                     <h1>COMPETITION PARTICIPATION</h1>
                     <div style={{display: 'inline'}}>
@@ -34,42 +34,13 @@ class Competition extends React.Component {
                     </div>
                     <Row>
                         <Col xs="6" sm="4">
-                            <Card>
-                                <CardImg top width="100%" src={require("./../../assets/img/logo.svg")} alt="Card image cap" />
-
-                            </Card>
+                            <CompetitionCard title="UNIVERSITY ROVER CHALLENGE" subtitle="USA" img={require("./../../assets/img/logo.svg")}/>
                         </Col>
                         <Col xs="6" sm="4">
-                            <Card>
-                                <CardImg top width="100%" src={require("./../../assets/img/logo.svg")} alt="Card image cap" />
-
-                            </Card>
+                            <CompetitionCard title="EUROPEAN ROVER CHALLENGE" subtitle="EUROPE" img={require("./../../assets/img/logo.svg")}/>
                         </Col>
                         <Col sm="4">
-                            <Card>
-                                <CardImg top width="100%" src={require("./../../assets/img/logo.svg")} alt="Card image cap" />
-
-                            </Card>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col xs="6" sm="4">
-                            <Card>
-                                <CardImg top width="100%" src={require("./../../assets/img/logo.svg")} alt="Card image cap" />
-
-                            </Card>
-                        </Col>
-                        <Col xs="6" sm="4">
-                            <Card>
-                                <CardImg top width="100%" src={require("./../../assets/img/logo.svg")} alt="Card image cap" />
-
-                            </Card>
-                        </Col>
-                        <Col sm="4">
-                            <Card>
-                                <CardImg top width="100%" src={require("./../../assets/img/logo.svg")} alt="Card image cap" />
-
-                            </Card>
+                            <CompetitionCard title="INDIA ROVER DESIGN CHALLENGE" subtitle="INDIA, ONGOING" img={require("./../../assets/img/logo.svg")}/>
                         </Col>
                     </Row>
                 </Container>
