@@ -9,12 +9,18 @@ import App from './App';//remove after setup
 
 import * as serviceWorker from './serviceWorker';
 
-import routes from "routes.js";
+import routes from "./routes.js";
+
+const hist = createBrowserHistory();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router history={hist}>
+    <Switch>
+      {/* <Route path="/" render={props => <Layout {...props} />} /> */}
+      <Route path="/app" render={props => <App {...props}/>} />
+      <Redirect to="/app" />
+    </Switch>
+  </Router>,
   document.getElementById('root')
 );
 
