@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/css/style.css';
-import App from './App';
+import { createBrowserHistory } from "history";
+import { Router, Route, Switch, Redirect } from "react-router-dom";
+
+import './assets/css/style.css'; //Global Stylesheet
+
+import App from './App';//remove after setup
+
 import * as serviceWorker from './serviceWorker';
+
+import routes from "routes.js";
 
 ReactDOM.render(
   <React.StrictMode>
