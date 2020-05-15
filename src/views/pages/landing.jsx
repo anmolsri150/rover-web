@@ -1,6 +1,7 @@
 import React from "react";
-import Contact from './../components/contact';
-import Sponsors from './../components/sponsors';
+import Contact from './../components/contact_section';
+import Sponsors from './../components/sponsors_section';
+import LANDING_SECTION from "../components/landing_section";
 // reactstrap components
 import {
   Button,
@@ -25,12 +26,16 @@ class Landing extends React.Component {
   render() {
     return (
       <div className="lock-page">
+        <LANDING_SECTION>
+
+        </LANDING_SECTION>
         <Sponsors>
 
         </Sponsors>
         <Contact>
 
         </Contact>
+
         {/*<Container>*/}
         {/*  <Col className="ml-auto mr-auto" lg="4" md="6">*/}
         {/*    <Card className="card-lock text-center">*/}
