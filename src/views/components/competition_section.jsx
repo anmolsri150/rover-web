@@ -30,17 +30,17 @@ class Competition extends React.Component {
                 <Container>
                     <h1>COMPETITION PARTICIPATION</h1>
                     <div style={{display: 'inline'}}>
-                        <span>Lorem Ipsum</span>
+                        <span></span>
                     </div>
                     <Row>
                         <Col xs="6" sm="4">
-                            <CompetitionCard title="UNIVERSITY ROVER CHALLENGE" subtitle="USA" img={require("./../../assets/img/logo.svg")}/>
+                            <CompetitionCard title="UNIVERSITY ROVER CHALLENGE" subtitle="USA" img={require("./../../assets/img/Image 6.png")}/>
                         </Col>
                         <Col xs="6" sm="4">
-                            <CompetitionCard title="EUROPEAN ROVER CHALLENGE" subtitle="EUROPE" img={require("./../../assets/img/logo.svg")}/>
+                            <CompetitionCard title="EUROPEAN ROVER CHALLENGE" subtitle="EUROPE" img={require("./../../assets/img/Image 3.png")}/>
                         </Col>
                         <Col sm="4">
-                            <CompetitionCard title="INDIA ROVER DESIGN CHALLENGE" subtitle="INDIA, ONGOING" img={require("./../../assets/img/logo.svg")}/>
+                            <CompetitionCard title="INDIA ROVER DESIGN CHALLENGE" subtitle="INDIA, ONGOING" img={require("./../../assets/img/Image 7.png")}/>
                         </Col>
                     </Row>
                 </Container>

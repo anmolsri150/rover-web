@@ -1,3 +1,16 @@
 .contact{
     text-align: center;
+    background-color: #151515;
+}
+
+span{
+    font-family: 'Poppins', sans-serif;
+    color: #F3F8FE;
+}
+.head{
+    color: white;
+}
+.cont{
+    height: 100%;
+
 }
